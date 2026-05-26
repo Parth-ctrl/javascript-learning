@@ -91,7 +91,7 @@ let person = {
     }
 };
 
-console.log(person.hobbies);
+console.log(person);
 console.log(typeof person);
 
 // Array
