@@ -46,7 +46,13 @@ let valueInNumber5 = Number(score5)
 console.log(valueInNumber5)
 console.log(typeof valueInNumber5)
 
+let score6 = ""
+console.log(score6)
+console.log(typeof score6)
 
+let valueInNumber6 = Number(score6)
+console.log(valueInNumber6)
+console.log(typeof valueInNumber6)
 
 
 //"22" => 22
