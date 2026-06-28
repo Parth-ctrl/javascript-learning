@@ -43,3 +43,21 @@ console.log("Hello World");
 
 console.log(typeof myFunction); // function // Functions are actually objects in JavaScript, but typeof gives them a special return value "function" for convenience.
 
+// Stack memory(Non-primitive data types are stored in heap memory) and Heap memory(Primitive data types are stored in stack memory)
+
+let x = 10; // stored in stack memory
+let y = x; // stored in stack memory
+
+y = 20; // changing the value of y does not affect x
+
+console.log(x); // 10
+console.log(y); // 20
+
+let obj1 = { name: "John" }; // stored in heap memory
+let obj2 = obj1; // stored in heap memory
+
+obj2.name = "Doe"; // changing the value of obj2 affects obj1
+
+console.log(obj1.name); // Doe
+console.log(obj2.name); // Doe
+
