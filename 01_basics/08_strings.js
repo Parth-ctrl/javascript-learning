@@ -6,13 +6,14 @@ console.log(upperName); // Memory is allocated for the new string in the heap, a
 const count= 10;
 
 console.log(name + " " + " Value" + " " + count);
+console.log(`${name} Value ${count}`); // Template Literal, String Interpolation
 
 const gameName = new String("Cricket"); // String Object
-console.log(typeof gameName);
-console.log(gameName.toUpperCase())
-console.log(gameName[0]);
-console.log(gameName.charAt(3));
-console.log(gameName.indexOf('c'));
+console.log(typeof gameName); // object
+console.log(gameName.toUpperCase()) // it will return a new string in uppercase, but it will not change the original string
+console.log(gameName[0]); // Accessing the first character of the string using bracket notation
+console.log(gameName.charAt(3));  // Accessing the fourth character of the string using charAt() method
+console.log(gameName.indexOf('c')); // Returns the index of the first occurrence of the specified character in the string. If the character is not found, it returns -1.
 console.log(gameName.__proto__);
 
 let str = "JavaScript"; // length = 10
