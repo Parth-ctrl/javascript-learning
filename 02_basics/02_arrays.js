@@ -31,6 +31,16 @@ console.log(Array.from("Parth")); // ["P", "a", "r", "t", "h"]
 // Object is not iterable, so it cannot be converted into an array this way
 console.log(Array.from({ name: "Parth" })); // []
 
+let obj = {
+    0: "Parth",
+    1: "Saini",
+    length: 2
+};
+
+// from() → converts an array-like object into an array
+// The object needs numeric keys (0, 1, ...) and a length property
+console.log(Array.from(obj)); // ["Parth", "Saini"]
+
 
 let score1 = 100;
 let score2 = 200;
