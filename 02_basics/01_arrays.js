@@ -2,7 +2,7 @@ const myArr = ["Parth", 1, "Saini", 3, 4];
 
 const newArr = new Array(0, 1, 2, 3, 4);
 
-console.log(myArr[0]);
+console.log(myArr[0]); // bracket notation
 
 // Array Methods
 
