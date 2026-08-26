@@ -62,22 +62,48 @@ const users = [
 // // Access the 3rd object using index [2], then access its email property
 // console.log(users[2].email); // test_3@gnmail.com
 
-console.log(Object.keys(user));
-// Object.keys() → returns all object keys as an array
-console.log(Object.keys(user).length);
-// Object.keys() → gets all object keys as an array
-// .length → gets the number of keys/properties in the object
+// console.log(Object.keys(user));
+// // Object.keys() → returns all object keys as an array
+// console.log(Object.keys(user).length);
+// // Object.keys() → gets all object keys as an array
+// // .length → gets the number of keys/properties in the object
 
-console.log(Object.values(user));
-// Object.values() → returns all object values as an array
-// Arrays make it easy to access and loop through the keys/values
+// console.log(Object.values(user));
+// // Object.values() → returns all object values as an array
+// // Arrays make it easy to access and loop through the keys/values
 
-console.log(Object.entries(user));
-// Object.entries() → returns all key-value pairs as an array
+// console.log(Object.entries(user));
+// // Object.entries() → returns all key-value pairs as an array
 
-console.log(user.hasOwnProperty("id"));
-// hasOwnProperty() → checks if the object has its own property with the given key
+// console.log(user.hasOwnProperty("id"));
+// // hasOwnProperty() → checks if the object has its own property with the given key
 
-console.log(user.hasOwnProperty("isLoggedIn"));
+// console.log(user.hasOwnProperty("isLoggedIn"));
 // Returns true if "isLoggedIn" exists in user, otherwise false
 
+let course = {
+
+    courseName: "Js In Hindi",
+
+    fees: 999,
+
+    couserInstructor: "Hitesh",
+
+}
+
+console.log(course.couserInstructor);
+// Accessing the property using dot notation
+
+
+const { couserInstructor } = course;
+// Destructuring: gets couserInstructor from course and stores it in a variable with the same name
+
+console.log(couserInstructor);
+// Accessing the extracted value directly
+
+
+const { couserInstructor: Instructor } = course;
+// Destructuring with a new variable name: couserInstructor → Instructor
+
+console.log(Instructor);
+// Accessing the value using the new variable name
