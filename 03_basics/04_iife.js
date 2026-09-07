@@ -1,6 +1,7 @@
 // Immediately Invoked Function Expression(IIFE)
 
-(function test(){
+(function test(){ 
+    //name IIFE
     console.log("DB Connected")
 })(); // ; separates this IIFE from the next statement
 
